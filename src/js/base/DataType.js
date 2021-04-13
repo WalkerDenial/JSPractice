@@ -25,4 +25,22 @@ function foo(arg) {
     arg.a = 20;
 }
 foo(m)
-console.log(m.a)
+console.log(m.a);
+
+console.log(1 << 3);
+
+// 自执行函数
+(function() {
+    // ...
+})();
++function() {}()
+!function() {}()
+
+let name = "aaa"
+// let name = "bbb" // 此处编译将不通过，不能对 let 修饰的属性二次声明
+
+var name1 = "aaa"
+var name1 = "bbb" // 此处可以
+
+const name2 = "aaa"
+const name2 = "bbb" // 此处编译将不通过，不能二次声明
